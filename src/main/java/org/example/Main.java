@@ -10,8 +10,10 @@ import org.json.JSONObject;
 
 public class Main {
     private static final String API_BASE_URL = "https://api.worldoftanks.eu/wot/";
-    private static final String APPLICATION_ID = "8d5f77b4f7ae9515f305385ba98db1ef";
-    private static final String ACCESS_TOKEN = "c6dc29f84d4ce2046e0d59fb50c7195af74362b7";
+
+    private static final String APPLICATION_ID = System.getenv("WOT_APPLICATION_ID");
+    private static final String ACCESS_TOKEN = System.getenv("WOT_ACCESS_TOKEN");
+
     private static final String CLAN_ID = "500138842";
 
     public static void main(String[] args) throws Exception {
